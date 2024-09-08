@@ -1,0 +1,53 @@
+/* Contenedor del botón primario */
+:root {
+  /* Colores primarios */
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  /* Colores neutrales */
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+.boton-primario__container {
+  width: 90%;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  /* Centra el botón horizontalmente */
+  align-items: center;
+  /* Centra el botón verticalmente si es necesario */
+  /* Espaciado superior */
+}
+
+
+/* Botón primario */
+.boton-primario__button {
+  width: 100%;
+  background-color: hsl(245, 75%, 52%);
+  /* Azul vibrante */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.boton-primario__button:hover {
+  background-color: hsl(224, 23%, 55%);
+  /* Azul más oscuro al hacer hover */
+}
+
+.boton-primario__button:active {
+  background-color: #364fc4;
+  /* Azul más oscuro al hacer clic */
+}
+
+.boton-primario__button:disabled {
+  background-color: hsl(224, 23%, 55%);
+  /* Azul apagado cuando está deshabilitado */
+  cursor: not-allowed;
+}
