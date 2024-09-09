@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Make It Real - ORDER-SUMMARY-CARD
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the ORDER-SUMMARY-CARD project from the Make It Real course.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Summary](#summary)
+  - [The Challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+- [My Process](#my-process)
+  - [Built With](#built-with)
+  - [What I Learned](#what-i-learned)
+  - [Continued Development](#continued-development)
+  - [Useful Resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Summary
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### The Challenge
 
-### `npm test`
+Users should be able to:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- View an ORDER-SUMMARY-CARD according to the challenge instructions.
+- It should be configured first for mobile devices.
 
-### `npm run build`
+### Screenshot desktop
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![](./public/desktop.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Screenshot mobile
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![](./public/mobile.png)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## My Process
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Built With
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Semantic HTML5 markup.
+- Custom CSS properties.
+- Flexbox
+- Mobile-first workflow
+- React Component Development
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### What I Learned
 
-## Learn More
+During the development of this project, I have gained valuable knowledge in creating components in React. I learned how to design and build reusable components, which improves the modularity and maintainability of the code. Additionally, I mastered passing parameters to components, allowing each to receive specific data and adapt to different contexts.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```jsx
+function OrderSummary() {
+  return (
+    < >
+      <section className='oderSummary_contenedor'>
+        <ImagenCabecera />
+        <EncabezadoConSubtítulo />
+        <PlanProducto planAnual precio={59.99} />
+        <BotonPrimario label='Procee to Payment' />
+        <BotonSecundario label='Cancel Order' />
+      </section>
+    </>
+  )
+}
+```
+### Continued Development
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+In the future, I will focus on learning how to make my components responsive so that they adapt to different screen sizes. Since I have multiple CSS files for each subcomponent, I would like to learn techniques to handle responsive design more efficiently and avoid having to modify each CSS file individually. This will allow me to create applications that work well on devices of all sizes and improve the user experience.
 
-### Code Splitting
+### Useful Resources
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [CSS Documentation](https://developer.mozilla.org/en-US/docs/Web/CSS) - This documentation has been very helpful for understanding CSS properties and techniques. It has helped me resolve issues and improve the design of my projects.
+- [React Documentation](https://react.dev/learn) - The React documentation has been key to understanding how components work and how to manage state and props. I recommend this resource to anyone learning React and looking to deepen their knowledge of building applications with this library.
 
-### Analyzing the Bundle Size
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Website - [Gerson Camacho](https://github.com/GersonSmithKevin)
 
-### Making a Progressive Web App
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I want to thank my classmates and teachers for their support and patience in addressing my questions and doubts during this project. Their help and guidance have been crucial to my learning and development. Thank you for sharing your knowledge and experience!
